@@ -1,11 +1,21 @@
+import React from 'react'
 import './App.css';
+import Video from './Video';
 
 function App() {
   return (
-    <div className="App">
-        <h1>test tiktok dankness</h1>
+    <div className="app">
+          <div className="app__videos">
+        <Video/>
+        <Video/>
+        <Video/>
+        <Video/>
+        <Video/>
+        <Video/>
+        </div>
     </div>
   );
 }
 
 export default App;
+ 
