@@ -1,5 +1,5 @@
  import React from 'react'
- import "VideoSidebar.css"
+ import "./VideoSidebar.css"
  
  function VideoSidebar() {
      return (
