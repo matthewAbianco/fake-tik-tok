@@ -3,12 +3,12 @@ import "./VideoFooter.css"
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import Ticker from "react-ticker"
 
-function VideoFooter() {
+function VideoFooter( {channel, description, song}) {
     return (
         <div className="videoFooter">
             <div className="videoFooter__text">
-                <h3>@bombsquad</h3>
-                <p>the following is a test</p>
+                <h3>{channel}</h3>
+                <p>{description}</p>
                 <div className="videoFooter__ticker">
                 <MusicNoteIcon
                 className="videoFooter__icon"/>
@@ -16,7 +16,7 @@ function VideoFooter() {
                 <Ticker mode="smooth">
                     {({ index }) => (
                         <>
-                            <p>i am side scrolling</p>
+                            <p>{song}</p>
                         </>
                     )}
                 </Ticker>
